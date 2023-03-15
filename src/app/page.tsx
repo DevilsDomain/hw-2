@@ -1,6 +1,7 @@
+
+
 import Image from 'next/image'
 import { Inter } from 'next/font/google'
-import styles from './page.module.css'
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -12,11 +13,9 @@ export const metadata = {
 export default function Home() {
   return (
     <>
-      <body>
         <main>
           <p>Home</p>
         </main>
-      </body>
     
     </>
   )

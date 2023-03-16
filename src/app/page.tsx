@@ -1,6 +1,8 @@
 import Image from 'next/image'
 import { Inter } from 'next/font/google'
 import image from '../../public/thumb-1920-69561 copy.jpeg'
+import Script from 'next/script'
+import { helloScript } from '@/scripts/helloScript'
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -22,6 +24,7 @@ export default function Home() {
             width={1000}
             height={1000}
           />
+          <Script id='one' >{`${helloScript}`}</Script>
         </div>
       </main>
     </>

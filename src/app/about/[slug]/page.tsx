@@ -1,5 +1,5 @@
-
 import React from 'react'
+import ButtonLayout from '@/layouts/ButtonLayout';
 
 interface Params {
   slug: string;
@@ -14,10 +14,12 @@ export async function generateMetadata({ params }: { params: Params }) {
 
 function page({ params }: { params: Params }) {
   return (
-      <div>
-        <p>About Page</p>
-        <p>{params.slug}</p>
-      </div>
+    <ButtonLayout>
+        <div>
+          <p>About Page</p>
+          <p>{params.slug}</p>
+        </div>
+    </ButtonLayout>
     
   )
 }
